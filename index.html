@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sketsa Instrumentasi Persada</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -24,6 +26,11 @@
             </ul>
             <button class="mobile-menu-btn">☰</button>
         </nav>
+
+        <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        </head>
+
     </header>
 
     <!-- Hero Section -->
@@ -69,13 +76,18 @@
                 <div class="about-text">
                     <h3>Pionir Solusi Instrumentasi</h3>
                     <p>
-                        PT. Sketsa Instrumentasi Persada adalah perusahaan terdepan dalam bidang instrumentasi industri dan teknologi pengukuran. Dengan pengalaman lebih dari 10 tahun, kami telah menjadi mitra terpercaya untuk berbagai industri di Indonesia.
+                        PT. Sketsa Instrumentasi Persada adalah perusahaan terdepan dalam bidang instrumentasi industri
+                        dan teknologi pengukuran. Dengan pengalaman lebih dari 10 tahun, kami telah menjadi mitra
+                        terpercaya untuk berbagai industri di Indonesia.
                     </p>
                     <p>
-                        Kami mengkhususkan diri dalam penyediaan solusi instrumentasi yang inovatif, mulai dari konsultasi, desain, instalasi, hingga maintenance untuk memastikan operasi industri berjalan optimal dan efisien.
+                        Kami mengkhususkan diri dalam penyediaan solusi instrumentasi yang inovatif, mulai dari
+                        konsultasi, desain, instalasi, hingga maintenance untuk memastikan operasi industri berjalan
+                        optimal dan efisien.
                     </p>
                     <p>
-                        Tim profesional kami terdiri dari engineer berpengalaman yang siap memberikan solusi terbaik sesuai kebutuhan spesifik klien.
+                        Tim profesional kami terdiri dari engineer berpengalaman yang siap memberikan solusi terbaik
+                        sesuai kebutuhan spesifik klien.
                     </p>
                 </div>
                 <div class="about-box">
@@ -93,19 +105,23 @@
                 <div class="visi">
                     <h3>🎯 VISI</h3>
                     <p>
-                        Menjadi perusahaan terdepan dalam bidang instrumentasi dan otomasi industri di Indonesia, 
-                        yang dikenal karena inovasi, kualitas, dan pelayanan terbaik untuk mendukung kemajuan 
-                        industri nasional menuju era digitalisasi.
+                        Menjadi perusahaan terkemuka dalam teknologi instrumen dan otomasi industri di Indonesia,
+                        menyediakan solusi cerdas yang meningkatkan efisiensi, akurasi, dan keberlanjutan di berbagai
+                        industri.
                     </p>
                 </div>
                 <div class="misi">
                     <h3>🚀 MISI</h3>
                     <ul>
-                        <li>Menyediakan solusi instrumentasi berkualitas tinggi dan inovatif</li>
-                        <li>Memberikan layanan profesional dengan standar internasional</li>
-                        <li>Mengembangkan SDM yang kompeten dan berdedikasi tinggi</li>
-                        <li>Menjalin kemitraan strategis untuk pertumbuhan berkelanjutan</li>
-                        <li>Berkontribusi pada kemajuan teknologi industri Indonesia</li>
+                        <li>Mengembangkan dan menyediakan perangkat instrumentasi berkualitas tinggi dengan teknologi
+                            mutakhir</li>
+                        <li>Menawarkan solusi inovatif dalam pengukuran, kontrol, dan otomasi industri</li>
+                        <li>Meningkatkan produktivitas pelanggan dan efisiensi operasional melalui layanan berbasis
+                            teknologi</li>
+                        <li>Menjalin kemitraan strategis dengan berbagai industri untuk mendukung transformasi digital
+                        </li>
+                        <li>Berkontribusi pada perkembangan sumber daya manusia dalam teknologi instrumentasi melalui
+                            pendidikan dan pelatihan</li>
                     </ul>
                 </div>
             </div>
@@ -113,89 +129,260 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Layanan Kami</h2>
-            <div class="services-grid">
+
+            <!-- Service Options -->
+            <div class="service-options">
+                <button class="service-option-btn active" onclick="showServices()">Layanan Jasa</button>
+                <button class="service-option-btn" onclick="showProducts()">Produk</button>
+                <button class="service-option-btn" onclick="showRental()">Rental</button>
+            </div>
+
+            <!-- Services Grid -->
+            <div id="services-content" class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🔍</div>
-                    <h3>Konsultasi Instrumentasi</h3>
-                    <p>Analisis kebutuhan dan desain sistem instrumentasi yang optimal untuk industri Anda.</p>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581092918484-8313ce78e775?w=400&h=250&fit=crop"
+                            alt="Calibration Services">
+                    </div>
+                    <h3>Calibration & Repair Services</h3>
+                    <p>Layanan kalibrasi dan perbaikan instrumen dengan standar internasional untuk memastikan akurasi
+                        pengukuran yang optimal.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">⚙️</div>
-                    <h3>Instalasi & Komisioning</h3>
-                    <p>Pemasangan dan pengujian sistem instrumentasi dengan standar internasional.</p>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop"
+                            alt="CBM Services">
+                    </div>
+                    <h3>Condition Based Monitoring (CBM)</h3>
+                    <p>Sistem monitoring kondisi peralatan secara real-time untuk prediksi maintenance dan mencegah
+                        kerusakan tidak terduga.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>Maintenance & Kalibrasi</h3>
-                    <p>Layanan perawatan berkala dan kalibrasi untuk menjaga akurasi instrumen.</p>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1565114371403-11c8f1166dd1?w=400&h=250&fit=crop"
+                            alt="Compressor Services">
+                    </div>
+                    <h3>Compressor Services, Overhaul & Installation</h3>
+                    <p>Layanan lengkap untuk kompresor meliputi instalasi, overhaul, dan maintenance berkala untuk
+                        performa optimal.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">📚</div>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1589309397225-27d88f135a34?w=400&h=250&fit=crop"
+                            alt="Flowmeter Services">
+                    </div>
+                    <h3>Flow Measurement Services</h3>
+                    <p>Layanan pengukuran aliran dengan teknologi terdepan untuk berbagai jenis fluida dan aplikasi
+                        industri.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop"
+                            alt="Laser Alignment">
+                    </div>
+                    <h3>Laser Alignment Services</h3>
+                    <p>Layanan alignment presisi menggunakan teknologi laser untuk menjamin kinerja optimal mesin dan
+                        peralatan industri.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=400&h=250&fit=crop"
+                            alt="Training Services">
+                    </div>
                     <h3>Training & Support</h3>
-                    <p>Pelatihan operator dan dukungan teknis 24/7 untuk kelancaran operasi.</p>
+                    <p>Pelatihan operator dan dukungan teknis 24/7 untuk kelancaran operasi dan peningkatan kompetensi
+                        tim.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🔗</div>
-                    <h3>System Integration</h3>
-                    <p>Integrasi sistem instrumentasi dengan sistem kontrol dan monitoring.</p>
+            </div>
+
+            <!-- Products Section -->
+            <div id="products-content" class="products">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1589309397225-27d88f135a34?w=400&h=250&fit=crop"
+                            alt="Ultrasonic Flow Meter">
+                        <div class="product-info">
+                            <h3>Ultrasonic Flow Meter</h3>
+                            <p>Flow meter ultrasonik non-invasif untuk pengukuran aliran liquid dengan akurasi tinggi.
+                                Cocok untuk berbagai jenis pipa dan aplikasi industri.</p>
+                            <div class="price">Mulai dari Rp 25.000.000</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1581092918484-8313ce78e775?w=400&h=250&fit=crop"
+                            alt="Pressure Transmitter">
+                        <div class="product-info">
+                            <h3>Pressure Transmitter</h3>
+                            <p>Transmitter tekanan digital dengan output 4-20mA, akurasi 0.1% dan kompensasi temperatur
+                                otomatis untuk aplikasi industri berat.</p>
+                            <div class="price">Mulai dari Rp 3.500.000</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop"
+                            alt="Temperature Sensor">
+                        <div class="product-info">
+                            <h3>Temperature Sensor RTD/TC</h3>
+                            <p>Sensor temperatur RTD dan Thermocouple dengan berbagai material dan range temperatur
+                                untuk aplikasi industri yang demanding.</p>
+                            <div class="price">Mulai dari Rp 800.000</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop"
+                            alt="Level Transmitter">
+                        <div class="product-info">
+                            <h3>Level Transmitter</h3>
+                            <p>Transmitter level radar dan ultrasonic untuk pengukuran level liquid dan solid dengan
+                                teknologi contactless yang handal.</p>
+                            <div class="price">Mulai dari Rp 8.500.000</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1565114371403-11c8f1166dd1?w=400&h=250&fit=crop"
+                            alt="Control Valve">
+                        <div class="product-info">
+                            <h3>Control Valve & Actuator</h3>
+                            <p>Control valve pneumatic dan electric actuator untuk kontrol flow, pressure, dan
+                                temperature dengan presisi tinggi.</p>
+                            <div class="price">Mulai dari Rp 12.000.000</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=400&h=250&fit=crop"
+                            alt="Data Logger">
+                        <div class="product-info">
+                            <h3>Data Logger & Recorder</h3>
+                            <p>Data logger multi-channel dengan komunikasi wireless dan cloud storage untuk monitoring
+                                dan recording parameter proses.</p>
+                            <div class="price">Mulai dari Rp 5.500.000</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">📦</div>
-                    <h3>Spare Parts Supply</h3>
-                    <p>Penyediaan suku cadang original dan berkualitas untuk berbagai brand.</p>
+            </div>
+
+            <!-- Rental Section -->
+            <div id="rental-content" class="rental">
+                <div class="rental-grid">
+                    <div class="rental-card">
+                        <img src="https://images.unsplash.com/photo-1589309397225-27d88f135a34?w=400&h=250&fit=crop"
+                            alt="Portable Flow Meter">
+                        <div class="rental-info">
+                            <h3>Portable Ultrasonic Flow Meter</h3>
+                            <p>Sewa flow meter portable ultrasonik untuk pengukuran aliran sementara. Mudah dipasang
+                                tanpa memotong pipa, akurasi ±1%.</p>
+                            <div class="price">Rp 750.000/hari</div>
+                        </div>
+                    </div>
+                    <div class="rental-card">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=250&fit=crop"
+                            alt="Laser Alignment Tool">
+                        <div class="rental-info">
+                            <h3>Laser Shaft Alignment Tool</h3>
+                            <p>Peralatan laser alignment untuk shaft alignment motor-pompa dengan akurasi tinggi.
+                                Termasuk operator berpengalaman.</p>
+                            <div class="price">Rp 2.500.000/hari</div>
+                        </div>
+                    </div>
+                    <div class="rental-card">
+                        <img src="https://images.unsplash.com/photo-1581092918484-8313ce78e775?w=400&h=250&fit=crop"
+                            alt="Pressure Calibrator">
+                        <div class="rental-info">
+                            <h3>Digital Pressure Calibrator</h3>
+                            <p>Calibrator tekanan digital portable untuk kalibrasi pressure transmitter dan gauge dengan
+                                range 0-700 bar.</p>
+                            <div class="price">Rp 500.000/hari</div>
+                        </div>
+                    </div>
+                    <div class="rental-card">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop"
+                            alt="Vibration Analyzer">
+                        <div class="rental-info">
+                            <h3>Vibration Analyzer</h3>
+                            <p>Analyzer getaran untuk condition monitoring dan troubleshooting rotating equipment.
+                                Lengkap dengan software analisis.</p>
+                            <div class="price">Rp 1.200.000/hari</div>
+                        </div>
+                    </div>
+                    <div class="rental-card">
+                        <img src="https://images.unsplash.com/photo-1565114371403-11c8f1166dd1?w=400&h=250&fit=crop"
+                            alt="Temperature Calibrator">
+                        <div class="rental-info">
+                            <h3>Temperature Calibrator</h3>
+                            <p>Calibrator temperatur dry block untuk kalibrasi RTD, thermocouple, dan temperature
+                                transmitter dengan akurasi ±0.1°C.</p>
+                            <div class="price">Rp 650.000/hari</div>
+                        </div>
+                    </div>
+                    <div class="rental-card">
+                        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=400&h=250&fit=crop"
+                            alt="Multi Function Calibrator">
+                        <div class="rental-info">
+                            <h3>Multifunction Process Calibrator</h3>
+                            <p>Calibrator multifungsi untuk signal mA, mV, RTD, TC, frequency, dan pressure. Satu alat
+                                untuk berbagai kebutuhan kalibrasi.</p>
+                            <div class="price">Rp 900.000/hari</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="about">
+    <section id="gallery" class="gallery">
         <div class="container">
             <h2 class="section-title">Gallery Proyek</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'><rect fill='%233498db' width='400' height='250'/><circle fill='%23fff' cx='200' cy='125' r='50' opacity='0.3'/><text x='200' y='130' text-anchor='middle' fill='white' font-size='16'>SCADA Project</text></svg>" alt="Instalasi SCADA System">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop"
+                        alt="Calibration Project">
                     <div class="gallery-overlay">
-                        <h3>Instalasi SCADA System</h3>
-                        <p>Implementasi sistem SCADA untuk monitoring real-time di pabrik petrokimia</p>
+                        <h3>Kalibrasi Instrumentasi</h3>
+                        <p>Proyek kalibrasi pressure transmitter di pabrik petrokimia dengan standar internasional</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'><rect fill='%232ecc71' width='400' height='250'/><circle fill='%23fff' cx='200' cy='125' r='50' opacity='0.3'/><text x='200' y='130' text-anchor='middle' fill='white' font-size='16'>Flow Meter</text></svg>" alt="Flow Meter Calibration">
+                    <img src="https://images.unsplash.com/photo-1565114371403-11c8f1166dd1?w=400&h=300&fit=crop"
+                        alt="Installation Project">
                     <div class="gallery-overlay">
-                        <h3>Flow Meter Calibration</h3>
-                        <p>Kalibrasi flow meter presisi tinggi untuk industri oil & gas</p>
+                        <h3>Instalasi Flow Meter</h3>
+                        <p>Instalasi ultrasonic flow meter untuk monitoring cooling water system</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'><rect fill='%23e74c3c' width='400' height='250'/><circle fill='%23fff' cx='200' cy='125' r='50' opacity='0.3'/><text x='200' y='130' text-anchor='middle' fill='white' font-size='16'>Temperature</text></svg>" alt="Temperature Monitoring">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop"
+                        alt="Maintenance Project">
                     <div class="gallery-overlay">
-                        <h3>Temperature Monitoring</h3>
-                        <p>Sistem monitoring suhu multi-point untuk industri makanan</p>
+                        <h3>Maintenance CBM</h3>
+                        <p>Implementasi condition based monitoring sistem untuk rotary equipment</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'><rect fill='%23f39c12' width='400' height='250'/><circle fill='%23fff' cx='200' cy='125' r='50' opacity='0.3'/><text x='200' y='130' text-anchor='middle' fill='white' font-size='16'>Pressure</text></svg>" alt="Pressure Transmitter">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=300&fit=crop"
+                        alt="Alignment Project">
                     <div class="gallery-overlay">
-                        <h3>Pressure Transmitter</h3>
-                        <p>Instalasi pressure transmitter untuk sistem steam boiler</p>
+                        <h3>Laser Alignment</h3>
+                        <p>Shaft alignment motor dan pompa menggunakan teknologi laser precision</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'><rect fill='%239b59b6' width='400' height='250'/><circle fill='%23fff' cx='200' cy='125' r='50' opacity='0.3'/><text x='200' y='130' text-anchor='middle' fill='white' font-size='16'>Control Valve</text></svg>" alt="Control Valve Setup">
+                    <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=400&h=300&fit=crop"
+                        alt="Training Project">
                     <div class="gallery-overlay">
-                        <h3>Control Valve Setup</h3>
-                        <p>Commissioning control valve untuk proses kimia</p>
+                        <h3>Pelatihan Operator</h3>
+                        <p>Training penggunaan dan maintenance instrumentasi untuk operator lapangan</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'><rect fill='%2334495e' width='400' height='250'/><circle fill='%23fff' cx='200' cy='125' r='50' opacity='0.3'/><text x='200' y='130' text-anchor='middle' fill='white' font-size='16'>Level Sensor</text></svg>" alt="Level Measurement">
+                    <img src="https://images.unsplash.com/photo-1589309397225-27d88f135a34?w=400&h=300&fit=crop"
+                        alt="Field Work">
                     <div class="gallery-overlay">
-                        <h3>Level Measurement</h3>
-                        <p>Sistem pengukuran level untuk tank storage</p>
+                        <h3>Field Measurement</h3>
+                        <p>Pengukuran flow rate menggunakan portable flow meter di lapangan industri</p>
                     </div>
                 </div>
             </div>
@@ -203,62 +390,81 @@
     </section>
 
     <!-- Team Section -->
-    <section id="team">
+    <section id="team" class="team">
         <div class="container">
             <h2 class="section-title">Tim Profesional</h2>
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-photo">
-                        <img src="photo/team/ayahnyafaiz.jpg" alt="Heri Riswanto">
+                        <img src="photo/team/ayahnyafaiz.jpg" alt="Ahmad Maulana">
                     </div>
                     <div class="team-info">
                         <h3>Heri Riswanto</h3>
-                        <div class="position">Direktur</div>
-                        <p>15+ tahun pengalaman di bidang instrumentasi industri</p>
+                        <p class="position">Direktur</p>
+                        <p>15+ tahun pengalaman dalam industri instrumentasi dan otomasi. Memimpin tim dengan visi
+                            inovasi teknologi untuk masa depan industri Indonesia.</p>
                     </div>
                 </div>
+
                 <div class="team-card">
-                    <div class="team-photo">
-                        <img src="photo/team/adimass.jpg" alt="Adimas Prawit A.S">
+                    <div class="team-photo no-photo" a href="#">
+                        <img src="photo/team/adimass.jpg" alt="" srcset="">
                     </div>
                     <div class="team-info">
                         <h3>Adimas Prawit Akbar Setiawan</h3>
-                        <div class="position">Staff Magang</div>
-                        <p>Mahasiswa Magang Program Studi D3 Teknik Informatika</p>
+                        <p class="position">Staff Magang</p>
+                        <p>Mahasiswa Magang D3 Teknik Informatika.</p>
                     </div>
                 </div>
                 <div class="team-card">
-                    <div class="team-photo">
-                        <img src="photo/team/faiz.jpg" alt="Faiz Ridwan R">
+                    <div class="team-photo no-photo">
+                        <img src="photo/team/faiz.jpg" alt="" srcset="">
                     </div>
                     <div class="team-info">
                         <h3>Faiz Ridwan Ramadhan</h3>
-                        <div class="position">Staff</div>
-                        <p>Expert dalam manajemen proyek instrumentasi</p>
+                        <p class="position">Staff</p>
+                        <p>Team IT</p>
                     </div>
                 </div>
                 <div class="team-card">
-                    <div class="team-photo no-photo">YY</div>
+                    <div class="team-photo no-photo">
+                        DF
+                    </div>
                     <div class="team-info">
-                        <h3>nama</h3>
-                        <div class="position">Staff</div>
-                        <p>Peneliti dan pengembang teknologi terdepan</p>
+                        <h3>Dewi Fitriani</h3>
+                        <p class="position">Project Coordinator</p>
+                        <p>Koordinator proyek berpengalaman dalam manajemen timeline dan quality assurance untuk
+                            project delivery yang tepat waktu.</p>
                     </div>
                 </div>
                 <div class="team-card">
-                    <div class="team-photo no-photo">RP</div>
+                    <div class="team-photo no-photo">
+                        <img src="photo/team/faiz.jpg" alt="" srcset="">
+                    </div>
                     <div class="team-info">
-                        <h3>nama, S.T.</h3>
-                        <div class="position">Field Engineer</div>
-                        <p>Spesialis instalasi dan commissioning</p>
+                        <h3>Faiz Ridwan Ramadhan</h3>
+                        <p class="position">Staff</p>
+                        <p>Team IT</p>
                     </div>
                 </div>
                 <div class="team-card">
-                    <div class="team-photo no-photo">DA</div>
+                    <div class="team-photo no-photo">
+                        <img src="photo/team/faiz.jpg" alt="" srcset="">
+                    </div>
                     <div class="team-info">
-                        <h3>nama, S.T.</h3>
-                        <div class="position">Quality Manager</div>
-                        <p>Expert dalam quality assurance dan kalibrasi</p>
+                        <h3>Faiz Ridwan Ramadhan</h3>
+                        <p class="position">Staff</p>
+                        <p>Team IT</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo no-photo">
+                        <img src="photo/team/faiz.jpg" alt="" srcset="">
+                    </div>
+                    <div class="team-info">
+                        <h3>Faiz Ridwan Ramadhan</h3>
+                        <p class="position">Staff</p>
+                        <p>Team IT</p>
                     </div>
                 </div>
             </div>
@@ -272,22 +478,40 @@
             <div class="contact-content">
                 <div class="contact-form">
                     <h3>Kirim Pesan</h3>
-                    <form action="#" method="POST">
+                    <form>
                         <div class="form-group">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Perusahaan</label>
+                            <input type="text" id="company" name="company" placeholder="Nama perusahaan">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="perusahaan">Perusahaan</label>
-                            <input type="text" id="perusahaan" name="perusahaan" placeholder="Nama perusahaan (opsional)">
+                            <label for="phone">No. Telepon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="08xx-xxxx-xxxx">
                         </div>
                         <div class="form-group">
-                            <label for="pesan">Pesan</label>
-                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            <label for="service">Layanan yang Dibutuhkan</label>
+                            <select id="service" name="service">
+                                <option value="">Pilih Layanan</option>
+                                <option value="calibration">Calibration & Repair</option>
+                                <option value="cbm">Condition Based Monitoring</option>
+                                <option value="compressor">Compressor Services</option>
+                                <option value="products">Pembelian Produk</option>
+                                <option value="rental">Rental Equipment</option>
+                                <option value="alignment">Laser Alignment</option>
+                                <option value="training">Training & Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Deskripsikan kebutuhan Anda..."></textarea>
                         </div>
                         <button type="submit" class="btn">Kirim Pesan</button>
                     </form>
@@ -295,34 +519,54 @@
                 <div class="contact-info">
                     <h3>Informasi Kontak</h3>
                     <div class="contact-item">
-                        <i>📍</i>
+                        <div class="contact-icon">📍</div>
                         <div>
                             <strong>Alamat:</strong><br>
                             Jl. Rawa Kuning No. 92<br>
+                            Pulogebang, Cakung<br>
                             Jakarta Timur 13950
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i>📞</i>
+                        <div class="contact-icon">📞</div>
                         <div>
                             <strong>Telepon:</strong><br>
-                            <a href="https://wa.me/6282123893181">+62 821-2389-3181</a>
+                            <a href="https://wa.me/6282123893181">+62 821 2389 3181 (WhatsApp)</a>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i>✉️</i>
+                        <div class="contact-icon">📧</div>
                         <div>
                             <strong>Email:</strong><br>
                             <a href="mailto:sketsa0377@gmail.com">sketsa0377@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i>🕐</i>
+                        <div class="contact-icon">🕐</div>
                         <div>
                             <strong>Jam Operasional:</strong><br>
                             Senin - Jumat: 08:00 - 17:00<br>
-                            Sabtu: 08:00 - 12:00
+                            Sabtu: Tutup<br>
+                            Minggu: Tutup
                         </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🚨</div>
+                        <div>
+                            <strong>Emergency Support:</strong><br>
+                            <a href="tel:+6282123893181">+62 821 2389 3181</a><br>
+                            24/7 untuk client kontrak
+                        </div>
+                    </div>
+
+                    <!-- Google Maps -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!4v1755508190438!6m8!1m7!1srsI493X28Y_kNqAcXCiVfA!2m2!1d-6.202773038381745!2d106.9615583045434!3f129.21910894127905!4f-9.217758792836378!5f0.7820865974627469"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
                     </div>
                 </div>
             </div>
@@ -332,10 +576,320 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 PT. Sketsa Instrumentasi Persada. All rights reserved.</p>
-            <p>Developed by Adimas Prawit Akbar Setiawan - Magang D3 Teknik Informatika</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PT. Sketsa Instrumentasi Persada</h4>
+                    <p>Solusi instrumentasi terpercaya untuk industri modern dengan teknologi terdepan dan layanan
+                        profesional berkualitas tinggi.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan Kami</h4>
+                    <ul>
+                        <li><a href="#services">Calibration & Repair</a></li>
+                        <li><a href="#services">Condition Monitoring</a></li>
+                        <li><a href="#services">Compressor Services</a></li>
+                        <li><a href="#services">Flow Measurement</a></li>
+                        <li><a href="#services">Laser Alignment</a></li>
+                        <li><a href="#services">Training & Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produk & Rental</h4>
+                    <ul>
+                        <li><a href="#services">Flow Meter</a></li>
+                        <li><a href="#services">Pressure Instruments</a></li>
+                        <li><a href="#services">Temperature Sensors</a></li>
+                        <li><a href="#services">Level Measurement</a></li>
+                        <li><a href="#services">Control Systems</a></li>
+                        <li><a href="#services">Rental Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <div class="footer-contact">
+                        <p>📍 Jl. Rawa Kuning No. 92 RT 07.07 , Pulogebang, Cakung, Jakarta Timur 13950</p>
+                        <p>📞 <a href="https://wa.me/6282123893181">+62 821 2389 3181(WhatsApp)</a></p>
+                        <p>📧 <a href="mailto:sketsa0377@gmail.com">sketsa0377@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 202 PT. Sketsa Instrumentasi Persada. All Rights Reserved.</p>
+                <p>Developed with ❤️ by Adimas Prawit Akbar Setiawan</p>
+            </div>
         </div>
     </footer>
 
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Service Section Management
+        function showServices() {
+            document.getElementById('services-content').style.display = 'grid';
+            document.getElementById('products-content').style.display = 'none';
+            document.getElementById('rental-content').style.display = 'none';
+
+            // Update button states
+            document.querySelectorAll('.service-option-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function showProducts() {
+            document.getElementById('services-content').style.display = 'none';
+            document.getElementById('products-content').style.display = 'block';
+            document.getElementById('rental-content').style.display = 'none';
+
+            // Update button states
+            document.querySelectorAll('.service-option-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function showRental() {
+            document.getElementById('services-content').style.display = 'none';
+            document.getElementById('products-content').style.display = 'none';
+            document.getElementById('rental-content').style.display = 'block';
+
+            // Update button states
+            document.querySelectorAll('.service-option-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                    mobileMenuBtn.textContent = '☰';
+                }
+            });
+        });
+
+        // Form Submission with WhatsApp Integration
+        const contactForm = document.querySelector('.contact-form form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Get form data
+                const formData = new FormData(this);
+                const name = formData.get('name');
+                const company = formData.get('company');
+                const email = formData.get('email');
+                const phone = formData.get('phone');
+                const service = formData.get('service');
+                const message = formData.get('message');
+
+                // Create WhatsApp message
+                const whatsappMessage = `Halo, saya ${name}${company ? ` dari ${company}` : ''}.%0A%0A` +
+                    `Email: ${email}%0A` +
+                    `Telepon: ${phone || 'Tidak disertakan'}%0A` +
+                    `Layanan yang dibutuhkan: ${service || 'Belum ditentukan'}%0A%0A` +
+                    `Pesan:%0A${message || 'Tidak ada pesan tambahan'}%0A%0A` +
+                    `Terima kasih!`;
+
+                // Open WhatsApp
+                const whatsappURL = `https://wa.me/6282123893181?text=${whatsappMessage}`;
+                window.open(whatsappURL, '_blank');
+
+                // Reset form
+                this.reset();
+                alert('Pesan Anda akan dikirim melalui WhatsApp. Terima kasih!');
+            });
+        }
+
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Header scroll effect
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling up
+                header.style.transform = 'translateY(0)';
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+
+            // Add background to header when scrolling
+            if (scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Counter Animation for Stats
+        const counters = document.querySelectorAll('.stat-item h3');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target') || counter.textContent);
+                const count = parseInt(counter.textContent);
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.textContent = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    const originalText = counter.textContent;
+                    if (originalText.includes('+')) {
+                        counter.textContent = target + '+';
+                    } else if (originalText.includes('/')) {
+                        counter.textContent = originalText;
+                    } else {
+                        counter.textContent = target;
+                    }
+                }
+            });
+        };
+
+        // Set data-target for counters
+        counters.forEach(counter => {
+            const text = counter.textContent;
+            if (text.includes('150')) counter.setAttribute('data-target', '150');
+            else if (text.includes('50')) counter.setAttribute('data-target', '50');
+            else if (text.includes('10')) counter.setAttribute('data-target', '10');
+            else if (text.includes('24')) counter.setAttribute('data-target', '24');
+            counter.textContent = '0';
+        });
+
+        // Start animation when stats section is visible
+        const statsSection = document.querySelector('.stats');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Gallery hover effects
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                this.querySelector('.gallery-overlay').style.transform = 'translateY(0)';
+            });
+
+            item.addEventListener('mouseleave', function () {
+                this.querySelector('.gallery-overlay').style.transform = 'translateY(100%)';
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function () {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Add click handlers for product and rental cards
+        document.querySelectorAll('.product-card, .rental-card').forEach(card => {
+            card.addEventListener('click', function () {
+                const title = this.querySelector('h3').textContent;
+                const message = `Halo, saya tertarik dengan ${title}. Mohon informasi lebih lanjut.`;
+                const whatsappURL = `https://wa.me/6282123893181?text=${encodeURIComponent(message)}`;
+                window.open(whatsappURL, '_blank');
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            const rate = scrolled * -0.5;
+
+            if (hero) {
+                hero.style.transform = `translateY(${rate}px)`;
+            }
+        });
+
+        // Add typing effect to hero title
+        const heroTitle = document.querySelector('.hero-content h1');
+        const titleText = heroTitle.textContent;
+        heroTitle.textContent = '';
+
+        let i = 0;
+        const typeWriter = () => {
+            if (i < titleText.length) {
+                heroTitle.textContent += titleText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        };
+
+        // Start typing effect after page load
+        setTimeout(typeWriter, 1000);
+
+        // Add smooth transitions for all interactive elements
+        document.querySelectorAll('.btn, .service-card, .product-card, .rental-card, .team-card, .gallery-item').forEach(element => {
+            element.style.transition = 'all 0.3s ease';
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set initial states
+            document.getElementById('products-content').style.display = 'none';
+            document.getElementById('rental-content').style.display = 'none';
+
+            // Add fade-in animation to all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.add('animate-in');
+            });
+        });
+    </script>
 </body>
+
 </html>
